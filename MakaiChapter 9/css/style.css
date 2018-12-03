@@ -1,0 +1,22 @@
+table, th	{
+	width:80%;
+	border: 1px solid black;
+	text-align:center;
+	font-size:30px;
+}
+
+img	{
+	width:100%;
+}
+
+td	{
+	font-weight:bold;
+	width:80%;
+	border: 1px solid black;
+	text-align:center;
+	font-size:30px;
+}
+
+.crownvic	{
+	width:25%;
+}
