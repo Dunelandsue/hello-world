@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Matthew Waters Lists</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="logo.ico">
+    <link rel="stylesheet" href="matt.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+	<style>
+		.content {
+			margin: auto;
+            width: 75%;
+            height: 1000px;
+            background-color: mintcream;
+            padding: 0;
+            font-family: 'Acme';
+            text-align: center;
+		}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.sticky + .content {
+			padding-top: 60px;
+		}
+        .content h1 {
+            margin: 0px;
+            font-size: 40px;
+        }
+        .content ol, ul {
+            margin: 0px;
+            color: black;
+            font-size: 30px;
+        }
+        .content dl {
+            margin: 0px;
+            color: black;
+        }
+        .content dt {
+            font-size: 30px;
+        }
+        .content dd {
+            font-size: 20px;
+        }
+	</style>
+</head>
+<body>
+<div>
+<div class="header">
+    <a href="Frontpage.html">Matthew Waters</a>
+</div>
+<div id="navbar">
+    <a href="Frontpage.html">Home</a> <!-- Home tab on navbar -->
+    <a href="Table.html">Table</a> <!-- Table tab on navbar -->
+    <a class="active" href="Lists.html">Lists</a> <!-- Lists tab on navbar -->
+    <a href="Pre.html">Coding</a> <!-- Pre-formatted text tab on navbar -->
+    <a href="And.html">And</a> <!-- And tab on navbar -->
+    <a href="Gallery.html">Gallery</a> <!-- Gallery tab on navbar -->  
+    <a href="https://www.facebook.com/matthewarchwaters">Facebook</a> <!-- Facebook tab on navbar -->
+</div>
+<div class="content">
+    <div>
+        <h1>Matt's Top Five Favorite Political Parties in Order</h1>
+        <ol>    
+            <li>Democratic Party</li>
+            <li>Democratic Party</li>
+            <li>Democratic Party</li>
+            <li>Democratic Party</li>
+            <li>Church of the Militant Elvis Presley Party</li>
+        </ol>
+        <h1>Matt's Bottom Five Least Favorite People not in Order</h1>
+        <ul>
+            <li>Lynyrd Skynyrd</li>
+            <li>Donald J. Trump</li>
+            <li>Adolf Hitler</li>
+            <li>Satan</li>
+            <li>Sean Hannity</li>
+        </ul>
+        <h1>Matt's Top Five Favorite Words and their Definitions</h1>
+        <dl>
+            <dt>Ok</dt>
+            <dd>used to express assent, agreement, or acceptance.</dd>
+            <dt>Well</dt>
+            <dd>used to express a range of emotions including surprise, anger, resignation, or relief.</dd>
+            <dt>That's</dt>
+            <dd>contraction of that is or that has.</dd>
+            <dt>Just</dt>
+            <dd>exactly.</dd>
+            <dt>Wrong</dt>
+            <dd>not correct or true; incorrect.</dd>
+        </dl>
+    </div>
+</div>
+</div>
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		} else {
+			navbar.classList.remove("sticky");
+		}
+	}
+</script>    
+</body>
+</html>

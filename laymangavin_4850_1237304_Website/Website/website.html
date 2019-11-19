@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Solar System</title>
+</head>
+<body style="background-color:black; text-align:center; color:white; font-family:Georgia, serif">
+
+<h1 "font-family:verdana;">Oh Wow! It's the Solar System!</h1>
+<h3>This website goes over all of the planets.</h3>
+<!---External Image--->
+<img src="https://thumbs.gfycat.com/ShoddyWeirdJabiru-size_restricted.gif" width="800px">
+
+<hr>
+
+<p style="text-align:left;">To learn about the Sun and the planets, please <STRONG>click on the following images.</STRONG></p>
+
+<!---Following this is images of the planets with which the user can click to learn about it--->
+<a href="Mercury.html" style="float:right;">
+    <img alt="Mercury" src="Images/Mercury.gif" width="500" height="500">
+</a>
+<p style="float:right;">Mercury</p>
+<a href="TheSun.html" style="float:right;">
+    <img alt="Sun" src="Images/Sun.jpg" width="500" height="500">
+</a>
+<p style="float:center;">The Sun</p>
+<!--Line breaks to get text next to picture-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="Earth.html" style="float:right;">
+    <img alt="Earth" src="Images/Earth.gif" width="500" height="500">
+</a>
+<p style="float:right;">Earth</p>
+<a href="Venus.html" style="float:right;">
+    <img alt="Venus" src="Images/Venus.gif" width="500" height="500">
+</a>
+<p style="float:center;">Venus</p>
+<!--Line breaks to get text next to picture-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="Jupiter.html" style="float:right;">
+    <img alt="Jupiter" src="Images/Jupiter.gif" width="500" height="500">
+</a>
+<p style="float:right;">Jupiter</p>
+<a href="Mars.html" style="float:right;">
+    <img alt="Mars" src="Images/Mars.gif" width="500" height="500">
+</a>
+<p style="float:center;">Mars</p>
+<!--Line breaks to get text next to picture-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="Uranus.html" style="float:right;">
+    <img alt="Uranus" src="Images/Uranus.gif" width="500" height="500">
+</a>
+<p style="float:right;">Uranus</p>
+<a href="Saturn.html" style="float:right;">
+    <img alt="Saturn" src="Images/Saturn.gif" width="500" height="500">
+</a>
+<p style="float:center;">Saturn</p>
+<!--Line breaks to get text next to picture-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="Pluto.html" style="float:right;">
+    <img alt="Pluto" src="Images/Pluto.gif" width="500" height="500">
+</a>
+<p style="float:right;">Pluto</p>
+<a href="Neptune.html" style="float:right;">
+    <img alt="Neptune" src="Images/Neptune.gif" width="500" height="500">
+</a>
+<p style="float:center;">Neptune</p>
+<!--Line breaks to get text next to picture-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+
+<h3>Ever wanted to convert miles to lightyears? Now you can with the following <EM>Java Code!</EM></h3>
+<!--Java Code-->
+<PRE style="text-align:left;"><TT>
+	import java.util.Scanner;
+
+    public class Miles2Lightyears{
+        public static void main (String [] agrs){
+        
+            Scanner reader = new Scanner(System.in);
+        
+            double milesDoub = 0;
+            int miles;
+            double lightYears;
+            while (true){
+              try{
+               System.out.print("What is the number of miles to be converted? ");
+               milesDoub = reader.nextDouble();
+               miles = (int)milesDoub;
+               break;
+              }catch (Exception e){
+               System.out.println("Error in number format!");
+               reader.nextLine();
+              }
+            }
+        
+            lightYears = miles / 5878625373183.6;
+        
+			System.out.println("Your distance is " + lightYears + " in light years.");
+		}
+	}
+</PRE></TT>
+</body>
+</html>

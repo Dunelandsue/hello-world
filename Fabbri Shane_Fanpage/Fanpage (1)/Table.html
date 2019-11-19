@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matthew Waters Table</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="logo.ico">
+    <link rel="stylesheet" href="matt.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+	<style>
+		.content {
+			margin: auto;
+            width: 75%;
+            height: 1000px;
+            background-color: mintcream;
+		}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.sticky + .content {
+			padding-top: 60px;
+		}
+		table {
+            margin: auto;
+			width:65%;
+            font: 30px 'Acme';
+		}
+        caption {
+            font: 30px 'Acme';
+        }
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 15px;
+		}
+		td {
+			text-align: center;
+		}	
+	</style>
+</head>
+<body>
+<div class="header">
+	<a href="Frontpage.html">Matthew Waters</a>
+</div>
+<div id="navbar">
+    <a href="Frontpage.html">Home</a> <!-- Home tab on navbar -->
+    <a class="active" href="Table.html">Table</a> <!-- Table tab on navbar -->
+    <a href="Lists.html">Lists</a> <!-- Lists tab on navbar -->
+    <a href="Pre.html">Coding</a> <!-- Pre-formatted text tab on navbar -->
+    <a href="And.html">And</a> <!-- And tab on navbar -->
+    <a href="Gallery.html">Gallery</a> <!-- Gallery tab on navbar -->  
+    <a href="https://www.facebook.com/matthewarchwaters">Facebook</a> <!-- Facebook tab on navbar -->
+</div>
+<div class="content">
+	<table>
+		<caption>Number of Mobile Cellphone Sales by Company by Year</caption>
+		<tr>
+			<th></th>
+			<th>Samsung</th>
+			<th>Apple</th>
+		</tr>
+		<tr>
+			<th>3000 B.C.</th>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<th>1400</th>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<th>2018</th>
+			<td>292 million</td>
+			<td>217.72 million</td>
+		</tr>
+	</table>
+</div>
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		} else {
+			navbar.classList.remove("sticky");
+		}
+	}
+</script>
+</body>
+</html>

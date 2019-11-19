@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<title>project</title>
+<body>
+
+<h1 style="text-align:center">The Rick and Morty Scream</h1>
+<h2 style="text-align:center"> classic</h2>
+<p> you might be asking yourself what is this masterpeice?<br> Well you see it is a remake of a classic. Is it stupid? <br> Kind of, but it is still visually appealing. <br> <br> creation date: between the year 0-2020 <br> Artist: some obsessive fan </p>
+<img src="https://img.huffingtonpost.com/asset/5936cb6b19000036003e4bd9.jpeg?cache=llefdr2eor&ops=scalefit_630_noupscale" alt="morty" style="width:750px;height:750px;">
+</body>
+</html>

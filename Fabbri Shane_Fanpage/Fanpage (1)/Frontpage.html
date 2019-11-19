@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Matthew Waters Official Fanpage</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="logo.ico">
+    <link rel="stylesheet" href="matt.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+	<style>
+		.content {
+			margin: auto;
+            width: 75%;
+            height: auto;
+            background-color: mintcream;
+            padding: 0;
+            font-family: 'Acme';
+            text-align: center;
+		}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.sticky + .content {
+			padding-top: 60px;
+		}
+        .content h1, h2, p {
+            margin:0;
+            color: black;
+        }
+	</style>
+</head>
+<body>
+<div>
+<div class="header">
+    <a href="Frontpage.html">Matthew Waters</a>
+</div>
+<div id="navbar">
+    <a class="active" href="Frontpage.html">Home</a> <!-- Home tab on navbar -->
+    <a href="Table.html">Table</a> <!-- Table tab on navbar -->
+    <a href="Lists.html">Lists</a> <!-- Lists tab on navbar -->
+    <a href="Pre.html">Coding</a> <!-- Pre-formatted text tab on navbar -->
+    <a href="And.html">And</a> <!-- And tab on navbar -->
+    <a href="Gallery.html">Gallery</a> <!-- Gallery tab on navbar --> 
+    <a href="https://www.facebook.com/matthewarchwaters">Facebook</a> <!-- Facebook tab on navbar -->
+</div>
+<div class="content">
+    <div>
+        <h1>Welcome to the Matthew Waters Official Fanpage</h1>
+        <h2>by Shane Fabbri</h2>
+        <img src="https://media3.giphy.com/media/KDH9hJ2mSEUYU/giphy.gif?cid=790b76115f5ca275eea8626093f4d15b9da138fe19266ad1&rid=giphy.gif">
+        <p>
+I don't want a lot for Christmas<br>
+There is just one thing I need<br>
+I don't care about the presents<br>
+Underneath the Christmas tree<br>
+I just want you for my own<br>
+More than you could ever know<br>
+Make my wish come true oh<br>
+All I want for Christmas is you<br>
+<br>
+I don't want a lot for Christmas<br>
+There is just one thing I need, and I<br>
+Don't care about the presents<br>
+Underneath the Christmas tree<br>
+I don't need to hang my stocking<br>
+There upon the fireplace<br>
+Santa Claus won't make me happy<br>
+With a toy on Christmas day<br>
+<br>
+I just want you for my own<br>
+More than you could ever know<br>
+Make my wish come true<br>
+All I want for Christmas is you<br>
+<br>
+I won't ask for much this Christmas<br>
+I won't even wish for snow, and I<br>
+I just wanna keep on waiting<br>
+Underneath the mistletoe<br>
+I won't make a list and send it<br>
+To the…</p>
+        <p style="font-size:30px;padding:15px;">In rememberence of Matthew Waters...</p>
+    </div>
+</div>
+</div>
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		} else {
+			navbar.classList.remove("sticky");
+		}
+	}
+</script>    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Matthew Waters Code</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="logo.ico">
+    <link rel="stylesheet" href="matt.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+	<style>
+		.content {
+			margin: auto;
+            width: 75%;
+            height: 1000px;
+            background-color: mintcream;
+            padding: 0;
+            font-family: 'Acme';
+            text-align: left;
+		}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.sticky + .content {
+			padding-top: 60px;
+		}
+        .content pre {
+            margin:0;
+            color: black;
+            font-size: 30px;
+        }
+        .content img {
+            margin: auto;
+            width: 100%;
+        }
+	</style>
+</head>
+<body>
+<div>
+<div class="header">
+    <a href="Frontpage.html">Matthew Waters</a>
+</div>
+<div id="navbar">
+    <a href="Frontpage.html">Home</a> <!-- Home tab on navbar -->
+    <a href="Table.html">Table</a> <!-- Table tab on navbar -->
+    <a href="Lists.html">Lists</a> <!-- Lists tab on navbar -->
+    <a class="active" href="Pre.html">Coding</a> <!-- Pre-formatted text tab on navbar -->
+    <a href="And.html">And</a> <!-- And tab on navbar -->
+    <a href="Gallery.html">Gallery</a> <!-- Gallery tab on navbar --> 
+    <a href="https://www.facebook.com/matthewarchwaters">Facebook</a> <!-- Facebook tab on navbar -->
+    </div>
+<div class="content">
+    <div>
+        <img src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F07%2FUntitled-design.png&signature=3eb451a46f0dc8aab8a65144e88af73f" alt="Hacker">
+    </div>
+    <div>
+        <pre>
+        
+        
+public class Waters {
+
+   public static void main(String[] args) {
+   
+      System.out.println("Lynyrd Skynyrd sucks!")  
+      
+   }
+   
+}
+        </pre>
+    </div>
+    
+</div>
+</div>
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		} else {
+			navbar.classList.remove("sticky");
+		}
+	}
+</script>    
+</body>
+</html>

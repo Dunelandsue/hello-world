@@ -1,0 +1,46 @@
+html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+		body {
+			margin: 0;
+		    background-image: url("background2.png"), url("background.png");
+            background-position: 1%, 99%;
+            background-size: 10.618%, 10.618%;
+            background-repeat: repeat-y;
+            background-color: lime;
+        }
+		.header {
+			background-image: url("bernie.gif");
+            background-repeat: repeat-x;
+			padding: 5px 0px 0px 5px;   
+            text-align: center;
+		}
+        .header a {
+            font: 92px 'Acme';
+            color: black;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+		#navbar {
+			overflow: hidden;
+			background-color: fuchsia;
+		}
+		#navbar a {
+			float: left;
+			display: block;
+			color: lime;
+			text-align: center;
+			padding: 5px 20px 5px 20px;
+			text-decoration: none;
+			font: 30px 'Acme';
+			letter-spacing: 2px;
+		}
+        #navbar a:hover { 
+			background-color: darkviolet;
+			color: lime;
+		}
+		#navbar a.active { 
+			background-color: mintcream;
+			color: lime;
+        }
